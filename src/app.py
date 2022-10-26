@@ -5,6 +5,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
+    st = speedtest.Speedtest()
     return "Hello, world!"
 
 
