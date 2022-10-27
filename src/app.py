@@ -5,9 +5,9 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    st = speedtest.Speedtest()
-    download = st.download()
-    return "Hello, world! " + str(download/1_000_000)
+    # st = speedtest.Speedtest()
+    # download = st.download()
+    return "Hello, world! "
 
 
 
