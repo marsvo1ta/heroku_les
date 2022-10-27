@@ -6,7 +6,7 @@ st = speedtest.Speedtest()
 
 @app.route("/")
 def index():
-    return "Hello, world! "
+    return "Hello, world! " + str(st.download()/1_000_000)
 
 
 
