@@ -42,7 +42,7 @@ jobs:
         pytest
     - name: Deploy to Heroku
       env:
-        HEROKU_API_TOKEN: "${{ secrets.HEROKU_TOKEN }}"
+        HEROKU_API_TOKEN: ${{ secrets.HEROKU_TOKEN }}
         HEROKU_APP_NAME: ${{ secrets.APP_NAME }}
         
       if: github.ref == 'refs/heads/master' && job.status == 'success'
