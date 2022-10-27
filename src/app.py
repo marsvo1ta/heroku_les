@@ -7,7 +7,7 @@ app = Flask(__name__)
 def index():
     st = speedtest.Speedtest()
     download = st.download()
-    return "Hello, world!" + str(download)
+    return "Hello, world! " + str(download/1_000_000)
 
 
 
