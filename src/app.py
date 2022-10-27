@@ -1,7 +1,8 @@
-
+import speedtest
 from flask import Flask
 
 app = Flask(__name__)
+st = speedtest.Speedtest()
 
 @app.route("/")
 def index():
