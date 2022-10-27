@@ -6,7 +6,7 @@ st = speedtest.Speedtest()
 
 @app.route("/")
 def index():
-    return "Hello, world! " + str(st.download()/1_000_000)
+    return f'Download Speed: {round(st.download()/1_000_000,1)} Mb/s'
 
 
 
