@@ -51,3 +51,4 @@ jobs:
         heroku_api_key: ${{secrets.HEROKU_TOKEN}}
         heroku_app_name: ${{secrets.APP_NAME}} 
         heroku_email: ${{secrets.EMAIL}}
+          git push heroku HEAD:master -f
