@@ -1,13 +1,16 @@
-import speedtest
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
-st = speedtest.Speedtest()
+
 
 @app.route("/")
 def index():
-    return f'Download Speed: {round(st.download()/1_000_000, 1)} Mb/s'
+    return render_template('index.html')
 
+
+@app.route("/second/")
+def second():
+    return render_template('index.html')
 
 
 if __name__ == "__main__":
