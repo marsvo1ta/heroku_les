@@ -53,5 +53,5 @@ jobs:
         heroku_app_name: ${{secrets.APP_NAME}} 
         heroku_email: ${{secrets.EMAIL}}
         branch: master
-        dontuseforce: true
+        dontuseforce: false
           
