@@ -10,7 +10,7 @@ def index():
 
 @app.route("/second/")
 def second():
-    return render_template('index.html')
+    return render_template('second.html')
 
 
 if __name__ == "__main__":
